@@ -1,7 +1,8 @@
 # Estudando Git e Github
 
 Teste
+Esta alteração está somente na branch teste
 
-# Esta seção estará presente somente na Branch Master
+# Testando como funciona a criação de branches
 
-Essa linha foi criada na branch master	
+Essa linha foi criada na branch
