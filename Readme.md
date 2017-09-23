@@ -1,8 +1,27 @@
 # Estudando Git e Github
 
-Teste
-Esta alteração está somente na branch teste
+# Configuração do Git
 
-# Testando como funciona a criação de branches
+COle essas linhas no arquivo .gitconfig para utilizar o winmerge como a ferramente de merge do git
 
-Essa linha foi criada na branch
+[mergetool]
+    prompt = false
+    keepBackup = false
+    keepTemporaries = false
+
+[merge]
+    tool = winmerge
+
+[mergetool "winmerge"]
+    name = WinMerge
+    trustExitCode = true
+    cmd = "/c/Program\\ Files\\ \\(x86\\)/WinMerge/WinMergeU.exe" -u -e -dl \"Local\" -dr \"Remote\" $LOCAL $REMOTE $MERGED
+
+[diff]
+    tool = winmerge
+
+[difftool "winmerge"]
+    name = WinMerge
+    trustExitCode = true
+    cmd = "/c/Program\\ Files\\ \\(x86\\)/WinMerge/WinMergeU.exe" -u -e $LOCAL $REMOTE
+
